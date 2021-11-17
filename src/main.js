@@ -45,6 +45,7 @@ Object.keys(filters).forEach((key) => {
 
 Vue.config.productionTip = false
 
+// 防抖
 Vue.directive('anti-shake', {
   inserted(el, binding) {
     el.timer = null
